@@ -47,14 +47,14 @@ func TestContainer(t *testing.T) {
 
 			item, _ := container.Get(key)
 			value := item.(*testStruct)
-			Convey("We can get the right element", func() {
+			Convey("We will get the right element", func() {
 				So(value.a, ShouldEqual, 1)
 			})
 		})
 
 		Convey("When get a exist element and wrong type assertion", func() {
 
-			Convey("We can get a panic", func() {
+			Convey("We will get a panic", func() {
 				So(func() { test() }, ShouldPanic)
 			})
 		})

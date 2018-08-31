@@ -8,6 +8,5 @@ func DBFromContainer(key string) *sql.DB {
 	if err != nil {
 		panic(err)
 	}
-
 	return item.(*sql.DB)
 }
